@@ -48,4 +48,4 @@ The IDS Simulator is designed to:
    Malicious IPs are highlighted in *red*.
 
 6. *Display alerts*  
-   Console & GUI messages like:
+   Console & GUI
