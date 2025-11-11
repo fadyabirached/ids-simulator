@@ -49,3 +49,9 @@ The IDS Simulator is designed to:
 
 6. *Display alerts*  
    Console & GUI
+
+   <img width="1120" height="623" alt="Screenshot 2025-11-10 183427" src="https://github.com/user-attachments/assets/d2b7ddd7-8a4e-4962-a7f3-c17c1f6c3c8a" />
+<img width="1117" height="622" alt="Screenshot 2025-11-10 183402" src="https://github.com/user-attachments/assets/c3b04ca1-d9fa-41ca-a8dd-7613d26e4f2f" />
+<img width="1119" height="619" alt="Screenshot 2025-11-10 183344" src="https://github.com/user-attachments/assets/ea2941c5-4351-4132-b29c-294e636e996d" />
+<img width="1120" height="841" alt="Screenshot 2025-11-10 183241" src="https://github.com/user-attachments/assets/78862e0c-cfc3-485f-aa01-aeef7d47d510" />
+
