@@ -5,7 +5,7 @@ A Python-based simulator for generating network traffic, injecting cyber attacks
 
 ## 📌 Overview  
 This project simulates network activity and applies basic rule-based intrusion detection techniques to identify malicious behavior such as *Port Scans* and *Denial-of-Service (DoS)* attacks.  
-It includes:
+It contains:
 
 ✅ Traffic simulation  
 ✅ Attack injection  
