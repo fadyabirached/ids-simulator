@@ -156,8 +156,12 @@ class IDSSimulatorGUI:
             return
 
         self.log("\n🔵 Generating charts...")
-        plot_top_counts(self.analytics["src"], "Top Source IPs", top_n=10, malicious_ips=self.malicious_ips)
-        plot_top_counts(self.analytics["dst"], "Top Destination IPs", top_n=10, malicious_ips=self.malicious_ips)
+        plot_top_counts(
+            self.analytics["src"], "Top Source IPs", top_n=10, malicious_ips=self.malicious_ips
+        )
+        plot_top_counts(
+            self.analytics["dst"], "Top Destination IPs", top_n=10, malicious_ips=self.malicious_ips
+        )
         plot_top_counts(self.analytics["port"], "Top Destination Ports", top_n=10)
 
 
