@@ -1,5 +1,7 @@
 # 🔐 Cyber Intrusion Detection System (IDS) Simulator
 
+[![CI](https://github.com/fadyabirached/ids-simulator/actions/workflows/ci.yml/badge.svg)](https://github.com/fadyabirached/ids-simulator/actions/workflows/ci.yml)
+
 A Python simulator for generating network traffic, injecting attacks, detecting
 anomalies with rule-based heuristics, and visualizing the results — with both a
 **Tkinter GUI** and a **CLI**.
@@ -63,6 +65,9 @@ ids-simulator/
 ├── analytics.py        # Top-N counting helpers (sources, destinations, ports)
 ├── visualizer.py        # Matplotlib bar chart rendering
 ├── storage.py           # CSV save/load for event logs
+├── tests/               # Pytest suite for detectors, analytics, filters, storage
+├── .github/workflows/ci.yml  # Lint + test on every push
+├── pyproject.toml       # Pytest config
 ├── LICENSE
 └── README.md            # This file
 ```
@@ -118,12 +123,19 @@ different arguments in your own script.
 
 ---
 
-## Testing
+## Testing & CI
 
-There is no automated test suite yet — the detection logic is pure and
-side-effect-free (`detectors.py`, `analytics.py`, `filters.py` all operate on plain
-lists/dicts), which would make it straightforward to cover with `pytest` if that's
-added later.
+`tests/` covers the pure, side-effect-free logic — detectors, analytics, filters, and
+CSV storage round-tripping — all operating on plain lists/dicts, no GUI or Matplotlib
+involved.
+
+```bash
+pip install pytest ruff matplotlib
+pytest -v          # run the test suite
+ruff check .        # lint
+```
+
+GitHub Actions (`.github/workflows/ci.yml`) runs both on every push/PR to `main`.
 
 ---
 
